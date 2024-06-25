@@ -1,0 +1,21 @@
+## Overview
+
+The Vision Transformer (ViT) model leverages transformer architecture for image classification tasks. This project demonstrates the implementation of ViT on the CIFAR-10 dataset, a standard benchmark dataset in machine learning.
+
+## Dataset
+
+The CIFAR-10 dataset consists of 60,000 32x32 color images in 10 different classes. The dataset is split into 50,000 training images and 10,000 test images.
+
+## Model Architecture
+
+The model consists of the following main components:
+- **Data Augmentation**: Includes normalization, resizing, random flipping, random rotation, and random zoom.
+- **Patches**: The input image is divided into patches.
+- **Patch Encoding**: Each patch is projected into a lower-dimensional space and positional encodings are added.
+- **Transformer Layers**: Multiple layers of transformer blocks are applied.
+- **Classification Head**: A Multi-Layer Perceptron (MLP) is used for the final classification.
+
+## Additional Notes
+
+- This project uses TensorFlow Addons for the AdamW optimizer.
+- Ensure that you have sufficient computational resources, as training transformer models can be resource-intensive.
